@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry brainup/brn-backend
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: brainup/brn-backend
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry brainup/brn-frontend
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: brainup/brn-frontend
         username: ${{ secrets.DOCKER_USERNAME }}
